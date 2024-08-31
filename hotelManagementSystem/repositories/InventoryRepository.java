@@ -1,6 +1,6 @@
-package hotelManagementSystem;
+package LowLevelDesigns.hotelManagementSystem.repositories;
 
-import hotelManagementSystem.entities.Room;
+import LowLevelDesigns.hotelManagementSystem.entities.Room;
 import hotelManagementSystem.utils.RoomType;
 
 import java.util.*;

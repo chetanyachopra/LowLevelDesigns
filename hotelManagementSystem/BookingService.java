@@ -1,7 +1,8 @@
-package hotelManagementSystem;
+package LowLevelDesigns.hotelManagementSystem;
 
-import hotelManagementSystem.entities.Guest;
-import hotelManagementSystem.entities.Room;
+import LowLevelDesigns.hotelManagementSystem.repositories.GuestRepository;
+import LowLevelDesigns.hotelManagementSystem.repositories.InventoryRepository;
+import LowLevelDesigns.hotelManagementSystem.entities.*;
 import hotelManagementSystem.utils.GuestEventType;
 import hotelManagementSystem.utils.ReservationStatus;
 import hotelManagementSystem.utils.RoomStatus;

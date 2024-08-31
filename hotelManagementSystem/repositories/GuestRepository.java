@@ -1,6 +1,6 @@
-package hotelManagementSystem;
+package LowLevelDesigns.hotelManagementSystem.repositories;
 
-import hotelManagementSystem.entities.Guest;
+import LowLevelDesigns.hotelManagementSystem.entities.Guest;
 
 import java.util.concurrent.ConcurrentHashMap;
 

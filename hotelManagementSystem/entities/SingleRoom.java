@@ -1,4 +1,4 @@
-package hotelManagementSystem.entities;
+package LowLevelDesigns.hotelManagementSystem.entities;
 
 import hotelManagementSystem.utils.RoomType;
 

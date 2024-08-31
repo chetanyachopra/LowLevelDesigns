@@ -1,7 +1,9 @@
-package hotelManagementSystem;
+package LowLevelDesigns.hotelManagementSystem;
 
-import hotelManagementSystem.entities.*;
-
+import LowLevelDesigns.hotelManagementSystem.entities.*;
+import LowLevelDesigns.hotelManagementSystem.repositories.GuestRepository;
+import LowLevelDesigns.hotelManagementSystem.repositories.InventoryRepository;
+import LowLevelDesigns.hotelManagementSystem.entities.Guest;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -30,18 +32,18 @@ public class Hotel {
     private static ConcurrentHashMap<RoomType, Queue<Room>> intializeAvailableRooms() {
         LinkedList<Room> singleRoom = new LinkedList<>();
         LinkedList<Room> doubleRoom = new LinkedList<>();
-        LinkedList<Room> deluxRooms = new LinkedList<>();
+        LinkedList<Room> deluxeRooms = new LinkedList<>();
         LinkedList<Room> suitRooms = new LinkedList<>();
         for(int i=1;i<=10;i++) {
             singleRoom.add(new SingleRoom(100+i));
             if(i <= 6) doubleRoom.add(new DoubleRoom(200+i));
-            if(i <= 3) deluxRooms.add(new DeluxeRoom(300+i));
+            if(i <= 3) deluxeRooms.add(new DeluxeRoom(300+i));
             if(i <= 1) suitRooms.add(new SuitRoom(400+i));
         }
         ConcurrentHashMap<RoomType, Queue<Room>> availableRooms = new ConcurrentHashMap<>();
         availableRooms.put(RoomType.SINGLE, singleRoom);
         availableRooms.put(RoomType.DOUBLE, doubleRoom);
-        availableRooms.put(RoomType.DELUXE, deluxRooms);
+        availableRooms.put(RoomType.DELUXE, deluxeRooms);
         availableRooms.put(RoomType.SUIT, suitRooms);
         return availableRooms;
     }

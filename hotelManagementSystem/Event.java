@@ -1,6 +1,6 @@
-package hotelManagementSystem;
+package LowLevelDesigns.hotelManagementSystem;
 
-import hotelManagementSystem.entities.Guest;
+import LowLevelDesigns.hotelManagementSystem.entities.Guest;
 import hotelManagementSystem.utils.GuestEventType;
 import hotelManagementSystem.utils.RoomType;
 
